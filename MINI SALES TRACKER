@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double sales=0, Total = 0, average;
+   int customers = 0;
+    
+    cout << "Enter sales amount (0 to stop):";
+    cin >> sales;
+    
+    while (sales !=0) {
+        Total = Total + sales;
+        customers++;
+        
+        cout << "Enter sales amount  (0 to stop):";    
+        cin >> sales;
+        
+}
+     
+        if (customers > 0) {
+        average = Total /customers;
+        
+    }
+    
+    cout << "\nNumber of customers : "  << customers;
+    cout << "\nTotal sales collected: "  << Total;
+    cout << "\nAverage sales per customers: "  << average;
+    
+    return 0;
+    
+}
+    
